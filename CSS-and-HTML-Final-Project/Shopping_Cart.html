@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Games and Tech</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="functions_of_shopping_cart.js" async></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body {
+  font-family: Times New Roman, Arial, Arial;
+  margin: 0;
+}
+.header {
+  padding: 20px;
+  text-align: left;
+  background: #910F7C;
+  color: #DEBA16;
+}
+.header h1 {
+  font-size: 45px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #D900B6;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 35px 45px;
+  text-decoration: none;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+.navbar a:hover {
+  background-color: #e66deb;
+  color: white;
+}
+
+p1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: [width of img];
+    display: block;
+    margin: 0 auto;
+}
+p3 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    width: [width of img];
+    display: block;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    text-align: left;
+}
+button {
+  background-color: #D900B6;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.cart-row {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+}
+.cart-total {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Games and Tech</h1>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Most Popular</a>
+  <a href="Laptops.html">Laptops</a>
+  <a href="Console_Games.html">Console Games</a>
+  <a href="Consoles.html">Consoles</a>
+  <a href="Gaming_Gear.html">Gaming Gear</a>
+  <a href="Televisions.html">Televisions</a>
+  <a href="Shopping_Cart.html"><img src="Product_images/Shopping_Cart.png" alt="Shopping Cart" style="width:62px;height:62px;"></a>
+</div>
+
+<h2>Shopping Cart</h2>
+
+<p1>Reminder:Delivery should take maximum of 2-3 weeks and it is free. If your product does not arrive within 3 weeks, contact us at Games_And_Tech@gmail.com and you will get your money back.</p1>    
+
+</br>
+
+<div class="shop-item">
+      <img class="shop-item-image" src="Product_images/Asassins_Creed_picture.png" alt="Assassins Creed Valhala" style="width:20%">
+   </div>
+      <span class="shop-item-title">Assassins Creed Valhalla</span>
+      <span class="shop-item-price">60,00 €</span>
+      </br>
+      <button class="btn btn-primary shop-item-button" type="button">
+        Add to Shopping Cart</button>
+
+</br>
+
+<div class="cart-row">
+  <span class="cart-item cart-header cart-column">ITEM</span>
+  <span class="cart-price cart-header cart-column">PRICE</span>
+  <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+</div>
+<div class="cart-items">
+</div>
+<div class="cart-total">
+  <strong class="cart-total-title">Total</strong>
+  <span class="cart-total-price">0 €</span>
+</div>
+<button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+
+</body>
+</html>

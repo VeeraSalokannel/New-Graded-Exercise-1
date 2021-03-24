@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Games and Tech</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="functions_of_shopping_cart.js" async></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50.00%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+}
+.header {
+  padding: 20px;
+  text-align: left;
+  background: #910F7C;
+  color: #DEBA16;
+}
+.header h1 {
+  font-size: 45px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #D900B6;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 35px 45px;
+  text-decoration: none;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+.navbar a:hover {
+  background-color: #e66deb;
+  color: white;
+}
+
+p1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: [width of img];
+    display: block;
+    margin: 0 auto;
+}
+.shop-item-title {
+    font-size: 50px;
+    font-weight: Bolde;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width: [width of img];
+    display: block;
+    margin: 0 auto;
+}
+.shop-item-price {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width: [width of img];
+    display: block;
+    margin: 0 auto;
+}
+p4 {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width: [width of img];
+    display: block;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    text-align: left;
+}
+h3 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    text-align: left;
+}
+h4 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    text-align: left;
+}
+select {
+  width: 50%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+button {
+  background-color: #D900B6;
+  border: none;
+  color: black;
+  padding: 20px 47px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 24px 400px;
+  cursor: pointer;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+  <h1>Games and Tech</h1>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Most Popular</a>
+  <a href="Laptops.html">Laptops</a>
+  <a href="Console_Games.html">Console Games</a>
+  <a href="Consoles.html">Consoles</a>
+  <a href="Gaming_Gear.html">Gaming Gear</a>
+  <a href="Televisions.html">Televisions</a>
+  <a href="Shopping_Cart.html"><img src="Product_images/Shopping_Cart.png" alt="Shopping Cart" style="width:62px;height:62px;"></a>
+</div>
+
+<div class="shop-item">
+    <div class="column">
+        <img class="shop-item-image" src="Product_images/PS4_picture.png" alt="PS4" style="width:80%">
+     </div>
+    <div class="column">
+      <span class="shop-item-title">Playstation 4</span>
+      <span class="shop-item-price">309,00 €</span>   
+      </br>
+      <h4>About deliveries:</h4>
+      <p4>Delivery should take maximum of 2-3 weeks and it is free. If your product does not arrive within 3 weeks, contact us at Games_And_Tech@gmail.com and you will get your money back.</p4>
+      <button class="btn btn-primary shop-item-button" type="button">
+        Add to Shopping Cart</button>
+</br>
+</br>
+
+<h4>Color:</h4>
+
+<label class="container">Black
+    <input type="radio" checked="checked" name="radio">
+    <span class="checkmark"></span>
+  </label>
+
+
+</br>
+</br>
+
+<form action="/action_page.php">
+    <select name="Availability" id="Availability">
+      <option value="Availability">Availability</option>
+      <option value="Oulu: 3 available">Oulu: 3 available</option>
+      <option value="Helsinki: 0 available">Helsinki: 0 available</option>
+      <option value="Tampere: 0 available">Tampere: 0 available</option>
+      <option value="Storage: 11 available">Storage: 11 available</option>
+    </select>
+  </form>
+
+</br>
+
+ 
+        <div class="shopperActions mb-2">
+				
+		
+            <div class="form-inline d-flex">
+                
+                            <div class="quantity-select-container mr-2 position-relative d-flex">
+                                <select class="form-control quantity_select w-auto align-self-stretch flex-grow-1" id="quantityProductPage">
+                                    
+                                        <option value="1">1</option>
+                                    
+                                        <option value="2">2</option>
+                                    
+                                        <option value="3">3</option>
+                                    
+                                        <option value="4">4</option>
+                                    
+                                        <option value="5">5</option>
+                                    
+                                        <option value="6">6</option>
+                                    
+                                        <option value="7">7</option>
+                                    
+                                        <option value="8">8</option>
+                                    
+                                        <option value="9">9</option>
+                                    
+                                        <option value="10">10</option>
+                                    
+                                </select>
+                                
+                    </div>
+                
+                    
+            <div class="clear_float"></div>
+        </div>
+     
+     
+      </div>
+</div>
+
+</body>
+</html>
